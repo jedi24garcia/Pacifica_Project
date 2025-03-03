@@ -1,7 +1,58 @@
 /* Use this file for styling elements */
 
 h1 {
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-    position: relative;
-  }
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  position: relative;
+}
+
+.form_container {
+  padding: 100px 50px;
+  display: flex;
+}
+
+.box_container {
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 1px solid rgb(145, 145, 145);
+  width: 500px;
+  padding-bottom: 80px;
+}
+
+.box_container button {
+  background-color: #38bdf8;
+  color: white;
+  height: 50px;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.box_container h1 {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.box_container h3 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.box_container form button {
+  cursor: pointer;
+}
+
+.input_container {
+  text-align: center;
+}
+
+.input_field {
+  padding: 10px;
+}
+

@@ -1,0 +1,8 @@
+/* Use this file for styling elements */
+
+h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    background-color: red;
+  }

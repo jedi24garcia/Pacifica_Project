@@ -19,8 +19,18 @@
     <a href="{% url 'signup' %}" class="login-link">Sign Up</a>
     {% endif %}
    </div>
-    <h1>Pacifica Cultures Learning & Research Application</h1>
+    <a href="{% url 'base' %}" class="main-title">
+      <h1>Pacifica Cultures Learning & Research Application</h1>
+    </a>
   </header>
   <div>{% block content %} {% endblock %}</div>
+  <footer>
+    <div class="text1">
+      &copy; 2025 Pacifica, Inc.
+    </div>
+    <div class="text2">
+      Work with us
+    </div>
+  </footer>
 </body>
 </html>

@@ -8,10 +8,19 @@
   <link rel="stylesheet" href="{% static 'css/base.css' %}" />
 </head>
 <body>
-  <header>
-    <a href="{}"><button>Sign Up</button>
-    <a href="{}"><button>Login</button>
+  <header class="main-header">
+   <div class="authentication">
+    {% if user.is_authenticated %}
+    <span>Hello there, {{ user.username }}!</span>
+    <a href="{% url 'user_profile' %}">Profile</a>
+    <a href="{% url 'logout' %}" class="logout-link">Logout</a>
+    {% else %}
+    <a href="{% url 'login' %}" class="login-link">Login</a>
+    <a href="{% url 'signup' %}" class="login-link">Sign Up</a>
+    {% endif %}
+   </div>
     <h1>Pacifica Cultures Learning & Research Application</h1>
   </header>
+  <div>{% block content %} {% endblock %}</div>
 </body>
 </html>

@@ -7,21 +7,22 @@
   {% load static %}
   <link rel="stylesheet" href="{% static 'css/base.css' %}" />
 </head>
+
 <body>
   <header class="main-header">
-   <div class="authentication">
-    {% if user.is_authenticated %}
-    <span>Hello there, {{ user.username }}!</span>
-    <a href="{% url 'user_profile' %}">Profile</a>
-    <a href="{% url 'logout' %}" class="logout-link">Logout</a>
-    {% else %}
-    <a href="{% url 'login' %}" class="login-link">Login</a>
-    <a href="{% url 'signup' %}" class="login-link">Sign Up</a>
-    {% endif %}
-   </div>
-    <a href="{% url 'base' %}" class="main-title">
-      <h1>Pacifica Cultures Learning & Research Application</h1>
-    </a>
+  <a href="{% url 'base' %}" class="main-title">
+    <h1>Pacifica Cultures Learning & Research Application</h1>
+  </a> 
+    <div class="authentication">
+      {% if user.is_authenticated %}
+      <span>Hello there, {{ user.username }}!</span>
+        <a href="{% url 'user_profile' %}">Profile</a>
+        <a href="{% url 'logout' %}" class="logout-button">Logout</a>
+      {% else %}
+        <a href="{% url 'login' %}" class="left-button">Login</a>
+        <a href="{% url 'signup' %}" class="right-button">Sign Up</a>
+      {% endif %}
+    </div>
   </header>
   <div>{% block content %} {% endblock %}</div>
 
@@ -29,8 +30,14 @@
     <div class="text1">
       &copy; 2025 Pacifica, Inc.
     </div>
-    <div class="text2">
+    <div>
+      Home
+    </div>
+    <div>
       Work with us
+    </div>
+    <div>
+      Media
     </div>
   </footer>
 

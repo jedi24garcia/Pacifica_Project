@@ -1,8 +1,14 @@
 /* Use this file for styling elements */
 
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  padding: 10px;
+}
+
 .main-title {
-  text-align: center;
-  display: block;
   text-decoration: none;
 }
 
@@ -10,12 +16,10 @@
   position: relative;
   color: inherit;
   font-family: 'Dancing Script', cursive;
-  text-decoration: none;
 }
 
 .main-title h1:hover {
   color: #555;
-  text-decoration: none;
 }
 
 .authentication {
@@ -27,6 +31,60 @@
 .authentication a{
   text-decoration: none;
   color: black;
+}
+
+.left-button {
+  display: flex;
+  background-color: gray;
+  color: white;
+  border-radius: 50px;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.4s ease, box-shadow 0.4s ease; 
+}
+
+.left-button:hover {
+  box-shadow:  0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: scale(1.1);
+}
+
+.right-button {
+  display: flex;
+  background-color: gray;
+  color: white;
+  border-radius: 50px;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.right-button:hover {
+  box-shadow:  0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: scale(1.1);
+}
+
+.logout-button {
+  display: flex;
+  background-color: gray;
+  color: white;
+  border-radius: 50px;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.logout-button:hover {
+  box-shadow:  0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: scale(1.1);
 }
 
 .form_container {
@@ -79,3 +137,10 @@
   padding: 10px;
 }
 
+footer {
+  display: flex;
+  background-color: grey;
+  padding: 40px;
+  margin-top: 50px;
+  justify-content: space-between;
+}

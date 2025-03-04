@@ -7,6 +7,8 @@ from .forms import LoginForm, SignUpForm, ProfileForm
 from .models import Profile
 
 # Create your views here.
+
+# Define login page
 def UserLogin(request):
   if request.method == 'POST':
     form = LoginForm(request.POST)
@@ -25,6 +27,7 @@ def UserLogin(request):
       form = LoginForm()
   return render(request, 'login.html', {'form': form})
 
+# Define signup page
 def UserSignUp(request):
   if request.method == 'POST':
     form = SignUpForm(request.POST)
@@ -39,6 +42,7 @@ def UserSignUp(request):
     form = SignUpForm()
   return render(request, 'signup.html', {'form': form})
 
+# Define profile page
 def UserProfile(request):
     if request.user.is_authenticated:
         current_user = Profile.objects.get(user__id=request.user.id)
@@ -58,6 +62,7 @@ def UserProfile(request):
         messages.error(request, "You must be logged in to view this page")
         return redirect('login')
     
+# Define logout 
 def LogoutView(request):
     username = User.username
     if username != None:

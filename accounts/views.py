@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
+from django.contrib.auth import logout
+from django.contrib.auth.models import User
 from django.contrib import messages
 from .forms import LoginForm, SignUpForm, ProfileForm
 from .models import Profile
@@ -14,7 +16,7 @@ def UserLogin(request):
       user = authenticate(request, username=username, password=password)
       if user is not None:
         login(request, user)
-        return redirect('home') # redirect to home after login
+        return redirect('base') # redirect to home after login
       else:
          messages.error(request, "Invalid username or password")  
     else:
@@ -30,7 +32,7 @@ def UserSignUp(request):
       user = form.save() 
       login(request, user)
       messages.success(request, "Signup successful! Please login.")
-      return redirect('login') # redirect to hom after signup
+      return redirect('base') # redirect to hom after signup
     else:
       print("Form is not valid:", form.errors)
   else:
@@ -55,3 +57,9 @@ def UserProfile(request):
     else:
         messages.error(request, "You must be logged in to view this page")
         return redirect('login')
+    
+def LogoutView(request):
+    username = User.username
+    if username != None:
+        logout(request)
+        return redirect('base')

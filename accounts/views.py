@@ -18,7 +18,7 @@ def UserLogin(request):
       user = authenticate(request, username=username, password=password)
       if user is not None:
         login(request, user)
-        return redirect('base') # redirect to home after login
+        return redirect('homepage') # redirect to home after login
       else:
          messages.error(request, "Invalid username or password")  
     else:
@@ -35,7 +35,7 @@ def UserSignUp(request):
       user = form.save() 
       login(request, user)
       messages.success(request, "Signup successful! Please login.")
-      return redirect('base') # redirect to hom after signup
+      return redirect('login') # redirect to hom after signup
     else:
       print("Form is not valid:", form.errors)
   else:
@@ -67,4 +67,4 @@ def LogoutView(request):
     username = User.username
     if username != None:
         logout(request)
-        return redirect('base')
+        return redirect('homepage')

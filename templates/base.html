@@ -15,8 +15,8 @@
   </a> 
     <div class="authentication">
       {% if user.is_authenticated %}
-      <span>Hello there, {{ user.username }}!</span>
-        <a href="{% url 'user_profile' %}">Profile</a>
+      <span>Hello, {{ user.username }}!</span>
+        <a href="{% url 'user_profile' %}" class="profile-button">Profile</a>
         <a href="{% url 'logout' %}" class="logout-button">Logout</a>
       {% else %}
         <a href="{% url 'login' %}" class="left-button">Login</a>

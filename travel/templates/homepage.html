@@ -1,7 +1,41 @@
 {% extends 'base.html' %}  
 {% block content %}
-    <h1>Welcome to the Pacific Culture!</h1>
+    <div class="home-container">
+        <h1>Welcome to the Pacific Culture!</h1>
+    </div>
     {% load static %}
-    <img src="{% static 'sample.jpg' %}" alt="Pacific Culture" />
-    <p>Here you can find all the information about the best places to visit in the world.</p>
+    <div class="image-container">
+        <img src="{% static 'sample.jpg' %}" class="image" alt="Pacific Culture" />
+    </div>
+    <div class="home-container">
+        <h3>EATERIES</h3>
+    </div>
+    <div class="image-row">
+        <div class="image-containers">
+            <img src="{% static 'sample.jpg' %}" class="image1" />
+            <p>Restaurant 1</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        </div>
+        <div class="image-containers">
+            <img src="{% static 'sample.jpg' %}" class="image1" />
+            <p>Restaurant 2</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        </div>
+        <div class="image-containers">
+            <img src="{% static 'sample.jpg' %}" class="image1" />
+            <p>Restaurant 3</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        </div>
+    </div>
+    <div class="home-container">
+        <h3>ATTRACTIONS</h3>
+    </div>
+    <div class="attraction-container">
+        <h4>Subheading</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        <h4>Subheading</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        <h4>Subheading</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    </div>
 {% endblock %}

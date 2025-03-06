@@ -12,6 +12,7 @@
 
 .main-title {
   text-decoration: none;
+  color: black;
 }
 
 .main-title h1 {
@@ -168,6 +169,75 @@ footer {
   display: flex;
   background-color: grey;
   padding: 40px;
-  margin-top: 50px;
+  margin-top: 20%;
   justify-content: space-between;
+}
+
+/* Images */
+
+.home-container h1 {
+  position: relative;
+  color: inherit;
+  font-family: 'Dancing Script', cursive;
+  text-decoration: none;
+  padding: 50px;
+}
+
+.home-container h3 {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.attraction-container {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.attraction-container h4 {
+  padding: 50px;
+  margin-top: 1px;
+}
+
+.attraction-container p {
+  text-align: center;
+  width: 500px; 
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  border-radius: 20px;
+  height: auto;
+  width: 50%;
+}
+
+.image-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+.image-containers {
+  width: 500px; 
+  height: auto;
+  text-align: center;
+}
+
+.image1 {
+  height: 100%; 
+  width: 100%; 
+  border-radius: 10px;
+  transition: transform 0.3s ease; 
+}
+
+.image1:hover {
+  transform: scale(1.1);
 }

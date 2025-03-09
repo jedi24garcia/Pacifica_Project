@@ -175,6 +175,10 @@ footer {
 
 /* Images */
 
+.home-container {
+  text-align: center;
+}
+
 .home-container h1 {
   position: relative;
   color: inherit;

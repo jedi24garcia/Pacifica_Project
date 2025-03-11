@@ -2,10 +2,11 @@
 {% block title %}Dine Details{% endblock %}
 
 {% block content %}
-<div>
-    {% load static %}
-    <img src="{% static 'sample.jpg' %}" />
-</div>
+{% if dine.image %}
+    <img src="{{ dine.image.url }}" alt="{{ dine.name }} Image" />
+{% else %}
+    <p>No image available</p>
+{% endif %}
 <h2>{{ dine.name }}</h2>
 <p>{{ dine.description}} </p>
 {% endblock %}

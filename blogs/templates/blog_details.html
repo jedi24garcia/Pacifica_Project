@@ -5,8 +5,30 @@
 <div class="home-container">
     <h1>Blogs</h1>
 </div>
-<div class="image-row">
-    <div class="image-containers">
+<div class="blog-image-row">
+    <div class="blog-image-containers">
+        <img src="{% static 'sample.jpg' %}" class="image" />
+            <p>Post blog here</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        <img src="{% static 'sample.jpg' %}" class="image" />
+            <p>Post blog here</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        <img src="{% static 'sample.jpg' %}" class="image" />
+            <p>Post blog here</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    </div>
+    <div class="blog-image-containers">
+        <img src="{% static 'sample.jpg' %}" class="image" />
+            <p>Post blog here</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        <img src="{% static 'sample.jpg' %}" class="image" />
+            <p>Post blog here</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        <img src="{% static 'sample.jpg' %}" class="image" />
+            <p>Post blog here</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    </div>
+    <div class="blog-image-containers">
         <img src="{% static 'sample.jpg' %}" class="image" />
             <p>Post blog here</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
@@ -25,7 +47,7 @@
     <form method="Post">
         {% csrf_token %}
         <label for="blog_content">Share your experience with us: </label>
-        <textarea = id="blog_content" name="blog_content" rows="5" cols="50" placeholder="Please log in with us to write your personal experience"></textarea>
+        <textarea id="blog_content" name="blog_content" rows="5" cols="50" placeholder="Please log in with us to write your personal experience"></textarea>
         <br>
         <button type="submit">Submit</button>
     </form>

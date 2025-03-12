@@ -308,3 +308,9 @@ footer {
   text-align: center;
   max-width: 40%;
 }
+
+.blog-image {
+  border-radius: 20px;
+  height: auto;
+  width: 50%;
+}

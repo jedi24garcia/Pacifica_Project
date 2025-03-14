@@ -267,6 +267,11 @@ footer {
   padding: 5px;
 }
 
+.image-containers p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 .image1 {
   height: 100%; 
   width: 100%; 
@@ -309,8 +314,33 @@ footer {
   max-width: 40%;
 }
 
+.blog-image-containers p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 .blog-image {
   border-radius: 20px;
   height: auto;
   width: 50%;
+}
+
+/* About */
+
+.about-container {
+  margin: 0 auto;
+  max-width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-info-container p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-image {
+  margin-left: 20px;
+  flex:
+  0.5;
 }

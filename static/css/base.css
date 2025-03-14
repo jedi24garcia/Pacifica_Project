@@ -339,8 +339,8 @@ footer {
   line-height: 1.6;
 }
 
-.about-image {
-  margin-left: 20px;
-  flex:
-  0.5;
+/* Resources */
+.resources-links li {
+  font-size: 18px;
+  line-height: 1.6;
 }

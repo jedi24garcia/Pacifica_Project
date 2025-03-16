@@ -403,6 +403,10 @@ footer {
   transition: 0.3s;
 }
 
+.about-submit-button:hover {
+  background-color: #C19A6B;
+}
+
 /* Resources */
 
 .resources-links li {

@@ -486,15 +486,37 @@ footer {
 
 .media-text {
   font-size: 20px;
-  margin-top: -300px;
+  margin-top: -500px;
   color: gray;
 }
 
 .media-text2 {
   margin-right: 10px;
-  margin-top: -150px
+  margin-top: -300px
+}
+
+.media-resources-links {
+  margin-top: 150px;
+  margin-left: 20px;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: -150px;
+}
+
+.media-resources-links li {
+  margin-bottom: 30px;
 }
 
 .media-text3 {
   margin-left: -600px;
+}
+
+.summary-container {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.summary-container li {
+  font-size: 18px;
+  line-height: 1.6;
 }

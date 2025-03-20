@@ -130,6 +130,7 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .interactive-map-button:hover {

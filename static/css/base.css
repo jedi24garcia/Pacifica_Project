@@ -227,14 +227,17 @@ footer {
   margin-bottom: 10px;
 }
 
-.attraction-container h4 {
-  padding: 50px;
+.attraction-container h3 {
+  padding: 30px;
   margin-top: 1px;
+  text-align: center;
 }
 
 .attraction-container p {
   text-align: center;
-  width: 500px; 
+  width: 700px; 
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .image-container {

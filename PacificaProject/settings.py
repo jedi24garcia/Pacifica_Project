@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'travel',
     'dine',
     'blogs',
-    'attractions',
+    'attraction',
 ]
 
 MIDDLEWARE = [

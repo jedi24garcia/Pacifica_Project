@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class AttractionsConfig(AppConfig):
+class AttractionConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'attractions'
+    name = 'attraction'

@@ -20,7 +20,7 @@
         <img src="{% static 'chris.jpg' %}" class="blog-image" />
             <p><i>"One of the best islands I've ever been was Rarotonga. It was a paradise on Earth! The lagoon water was crystal clear which is perfect for swimming and snorkling. Everyone was friendly and happy, and it's easy to explore the island too. The night Polynesian dancing show was superb!" - <b>Chris Wu (UK)</b></i></p>
         <img src="{% static 'jake.jpg' %}" class="blog-image" />
-            <p><i>"Such a beautiful and very relaxing island! I love the beaches as they were very pristine, and the vibe from everyone was very laid-back, but happy. Although, some shops closes early so I had to plan personal errands in advance. Overall, Rarotonga was a great escape from reality." - <b>Jake P. (Germany)</b></i></p>
+            <p><i>"Such a beautiful and very relaxing island! I love the beaches as they were very pristine, and the vibe from everyone was very laid-back, but happy. Although, some shops closes early so I had to plan personal errands in advance. Overall, Rarotonga was a great escape from reality. Will be back sometime soon for sure!" - <b>Jake P. (Germany)</b></i></p>
     </div>
     <div class="blog-image-containers">
         <img src="{% static 'aaminah.jpg' %}" class="blog-image" />
@@ -33,17 +33,23 @@
 </div>
 <div class="home-container">
     <h1>Post blog</h1>
+</div>
 
 {% if user.is_authenticated %}
+<div class="blog-home-container">
+    <h1>Share your experience with us:</h1>
     <form method="Post">
         {% csrf_token %}
-        <label for="blog_content">Share your experience with us: </label>
-        <textarea id="blog_content" name="blog_content" rows="5" cols="50" placeholder="Please log in with us to write your personal experience"></textarea>
+        <div class="about-message-container">
+            <textarea id="blog_content" name="blog_content" rows="5" cols="50" placeholder="Please log in with us to write your personal experience"></textarea>
+        </div>
         <br>
-        <button type="submit">Submit</button>
+        <button type="submit" class="blog-submit-button">Submit</button>
     </form>
 {% else %}
-    <p>You must <a href="{% url 'login' %}">log in</a> or <a href="{% url 'signup' %}">create an account</a> to post a blog.</p>
+    <div class="blog-home-container">
+        <p>You must <a href="{% url 'login' %}">log in</a> or <a href="{% url 'signup' %}">create an account</a> to post a blog.</p>
+    </div>
 {% endif %}
 </div>
 {% endblock %}

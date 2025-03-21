@@ -3,10 +3,12 @@
 
 {% block content %}
 {% if attraction.image %}
-    <img src="{{ attraction.image.url }}" alt="{{ attraction.name }} Image" />
+    <img src="{{ attraction.image.url }}" alt="{{ attraction.name }} Image" class="attraction-details-image" />
 {% else %}
     <p>No image available</p>
 {% endif %}
-<h2>{{ attraction.name }}</h2>
-<p>{{ attraction.description}} </p>
+<div class="attraction-container-header">
+    <h2>{{ attraction.name }}</h2>
+    <p>{{ attraction.description}} </p>
+</div>
 {% endblock %}

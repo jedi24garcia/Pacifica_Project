@@ -3,10 +3,12 @@
 
 {% block content %}
 {% if dine.image %}
-    <img src="{{ dine.image.url }}" alt="{{ dine.name }} Image" />
+    <img src="{{ dine.image.url }}" alt="{{ dine.name }} Image" class="dine-details-image"/>
 {% else %}
     <p>No image available</p>
 {% endif %}
-<h2>{{ dine.name }}</h2>
-<p>{{ dine.description}} </p>
+<div class="dine-container-header">
+    <h2>{{ dine.name }}</h2>
+    <p>{{ dine.description}}</p>
+</div>
 {% endblock %}

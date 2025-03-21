@@ -329,6 +329,48 @@ footer {
   width: 50%;
 }
 
+.blog-home-container {
+  text-align: center;
+}
+
+.blog-home-container h1 {
+  position: relative;
+  color: #7B3F00;
+  font-family: 'Dancing Script', cursive;
+}
+
+textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f9f9f9;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-submit-button {
+  width: 20%;
+  background-color: #7B3F00;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.blog-submit-button:hover {
+  background-color: #C19A6B;
+}
+
 /* About */
 
 .about-container {
@@ -521,6 +563,41 @@ footer {
 }
 
 .summary-container li {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Dine */
+
+.dine-details-image {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.dine-container-header {
+  text-align: center;
+}
+
+.dine-container-header p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Attractions */
+.attraction-details-image {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.attraction-container-header {
+  text-align: center;
+}
+
+.attraction-container-header p {
+  text-align: center;
   font-size: 18px;
   line-height: 1.6;
 }

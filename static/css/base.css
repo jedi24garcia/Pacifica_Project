@@ -573,6 +573,7 @@ textarea {
   display: block;
   text-align: center;
   margin: 0 auto;
+  max-width: 50%;
 }
 
 .dine-container-header {
@@ -583,6 +584,8 @@ textarea {
   text-align: center;
   font-size: 18px;
   line-height: 1.6;
+  display: inline-block;
+  max-width: 50%;
 }
 
 /* Attractions */

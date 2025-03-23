@@ -3,6 +3,7 @@
 
 {% block content %}
 {% if dine.image %}
+<div class="space-in-between"></div>
     <img src="{{ dine.image.url }}" alt="{{ dine.name }} Image" class="dine-details-image"/>
 {% else %}
     <p>No image available</p>
@@ -19,6 +20,7 @@
     <h2>{{ dine.name_1 }}</h2>
     <p>{{ dine.description_1}}</p>
 </div>
+<div class="space-in-between"></div>
 <img src="{{ dine.image_2.url }}" alt="{{ dine.name }} Image_2" class="dine-details-image"/>
 <div class="dine-container-header">
     <h2>{{ dine.name_2 }}</h2>

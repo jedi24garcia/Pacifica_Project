@@ -588,6 +588,10 @@ textarea {
   max-width: 50%;
 }
 
+.space-in-between {
+  margin: 100px 0;
+}
+
 /* Attractions */
 .attraction-details-image {
   display: block;

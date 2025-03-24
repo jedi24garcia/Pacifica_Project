@@ -333,6 +333,12 @@ footer {
   text-align: center;
 }
 
+.blog-home-container p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 .blog-home-container h1 {
   position: relative;
   color: #7B3F00;
@@ -369,6 +375,26 @@ textarea {
 
 .blog-submit-button:hover {
   background-color: #C19A6B;
+}
+
+.blog-image-new-blog {
+  border-radius: 20px;
+  height: 300px;
+  width: 20%;
+}
+
+.blog-entry p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.image-upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  margin-left: 80px;
 }
 
 /* About */

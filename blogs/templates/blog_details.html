@@ -31,6 +31,30 @@
             <p><i>"Out of all the Pacific islands I've ever been, I believe Fiji is hands down the best places I've ever visited! The community are the friendliest in the world! I did a lot of swimming and the snorkling at the Mamanuca Islands was unbelievable. The Fijian culture is so calm and vibrant, and I loved the Lovo feast! It is amazing!" - <b>Charles Yi (China)</b></i></p>
     </div>
 </div>
+
+<div class="home-container">
+    <h1>Recent Blogs</h1>
+</div>
+
+<div class="home-container">
+    {% for blog in blogs %}
+        <div class="blog-post">
+            {% if blog.image %}
+            <div>
+                <img src="{{ blog.image.url }}" alt="Blog Image" class="blog-image-new-blog">
+            </div>
+            {% endif %}
+            <div class="blog-entry">
+                <p><i>"{{ blog.content }}" <b>-</b> <strong>{{ blog.user.username }}</strong></i></p>
+            </div>
+        </div>
+    {% empty %}
+        <div class="blog-home-container">
+            <p>No recent blogs posted yet. Be the first "again" to share your personal experience!</p>
+        </div>
+    {% endfor %}
+</div>
+
 <div class="home-container">
     <h1>Post blog</h1>
 </div>
@@ -38,10 +62,15 @@
 {% if user.is_authenticated %}
 <div class="blog-home-container">
     <h1>Share your experience with us:</h1>
-    <form method="Post">
+    <form method="Post" enctype="multipart/form-data">
         {% csrf_token %}
         <div class="about-message-container">
             <textarea id="blog_content" name="blog_content" rows="5" cols="50" placeholder="Please log in with us to write your personal experience"></textarea>
+        </div>
+        <br>
+        <div class="image-upload-container">
+            <label for="image">Upload a photo: </label>
+            <input type="file" name="image" accepts="image/*">
         </div>
         <br>
         <button type="submit" class="blog-submit-button">Submit</button>

@@ -2,6 +2,9 @@
 {% block title %}Attractions Details{% endblock %}
 
 {% block content %}
+<div class="home-container">
+    <h1>Popular Attraction</h1>
+</div>
 {% if attraction.image %}
     <img src="{{ attraction.image.url }}" alt="{{ attraction.name }} Image" class="attraction-details-image" />
 {% else %}
@@ -10,5 +13,24 @@
 <div class="attraction-container-header">
     <h2>{{ attraction.name }}</h2>
     <p>{{ attraction.description}} </p>
+</div>
+<div class="home-container">
+    <h1>Activities</h1>
+</div>
+{% load static %}
+<div class="attractions-activities">
+    <div class="activities-container">
+        <div class="image-wrapper">
+            <h2>{{ attraction.activity_name }}</h2>
+            <image src="{{ attraction.activity_image.url }}" alt="{{ attration.activity_name }} Image" class="activities-image"></image>
+            <p>{{ attraction.activity_description }}</p>
+        </div>
+    
+        <div class="image-wrapper">
+            <h2>{{ attraction.activity_name_2 }}</h2>
+            <image src="{{ attraction.activity_image_2.url }}" alt="{{ attration.activity_name_2 }} Image" class="activities-image"></image>
+            <p>{{ attraction.activity_description_2 }}</p>
+        </div>
+    </div> 
 </div>
 {% endblock %}

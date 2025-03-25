@@ -634,6 +634,8 @@ textarea {
   text-align: center;
   font-size: 18px;
   line-height: 1.6;
+  display: inline-block;
+  max-width: 50%;
 }
 
 .attractions-activities {
@@ -651,9 +653,19 @@ textarea {
   text-align: center;
 }
 
+.image-wrapper p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 .activities-image {
   height: 500px;
   width: 700px;
   border-radius: 10px;
   object-fit: cover;
+  transition: transform 0.3s ease; 
+}
+
+.activities-image:hover {
+  transform: scale(1.1);
 }

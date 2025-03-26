@@ -5,4 +5,25 @@
 <div class="home-container">
     <h1>Store</h1>
 </div>
+{% load static %}
+<div class="first-product">
+    <img src="{% static 'sample.jpg' %}" class="product-one" />
+    <div class="product-info">
+        <h2>Product Name</h2>
+        <div class="price-and-cart">
+            <h3 class="price">Price</h3>
+            <h3 class="cart">Add to Cart</h3>
+        </div>
+    </div>
+</div>
+<div class="second-product">
+    <img src="{% static 'sample.jpg' %}" class="product-two" />
+    <div class="product-info-2">
+        <h2>Product Name</h2>
+        <div class="price-and-cart-2">
+            <h3 class="price-2">Price</h3>
+            <h3 class="cart-2">Add to Cart</h3>
+        </div>
+    </div>
+</div>
 {% endblock %}

@@ -16,14 +16,14 @@
     <div class="authentication">
       {% if user.is_authenticated %}
       <span>Hello, {{ user.username }}!</span>
-        <a href="{% url 'user_profile' %}" class="profile-button">Profile</a>
-        <a href="{% url 'blog_details' %}" class="profile-button">Blogs</a>
-        <a href="{% url 'logout' %}" class="logout-button">Logout</a>
+        <a href="{% url 'user_profile' %}" class="base-button">Profile</a>
+        <a href="{% url 'blog_details' %}" class="base-button">Blogs</a>
+        <a href="{% url 'logout' %}" class="base-button">Logout</a>
       {% else %}
-        <a href="{% url 'blog_details' %}" class="profile-button">Blogs</a>
-        <a href="{% url 'store' %}" class="profile-button">Store</a>
-        <a href="{% url 'login' %}" class="left-button">Login</a>
-        <a href="{% url 'signup' %}" class="right-button">Sign Up</a>
+        <a href="{% url 'blog_details' %}" class="base-button">Blogs</a>
+        <a href="{% url 'store' %}" class="base-button">Store</a>
+        <a href="{% url 'login' %}" class="base-button">Login</a>
+        <a href="{% url 'signup' %}" class="base-button">Sign Up</a>
       {% endif %}
     </div>
   </header>

@@ -36,6 +36,7 @@
     <div>
         <h2>Contact Us</h2>
     </div>
+    {% if user.is_authenticated %}
     <form action="https://formspree.io/f/xwplbjkz" method="POST">
         {% csrf_token %}
 
@@ -89,6 +90,11 @@
     
         <button type="submit" class="about-submit-button">Submit</button>
     </form>
+    {% else %}
+    <div class="about-auth">
+        <p>Please <a href="{% url 'login' %}">log in</a> with us to send a message.</p>
+    </div>
+    {% endif %}
 
 </div>
 {% endblock %}

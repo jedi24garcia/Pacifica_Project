@@ -7,50 +7,90 @@
 </div>
 {% load static %}
 <div class="first-product">
-    <img src="{% static 'sample.jpg' %}" class="product-one" />
+    <img src="{% static 'tattoo.jpg' %}" class="product-one" />
     <div class="product-info">
-        <h2>Product Name</h2>
+        <h2>Traditional Tattoos</h2>
         <div class="price-and-cart">
-            <h3 class="price">Price</h3>
+            <h3 class="price">Price: $2500</h3>
             <h3 class="cart">Add to Cart</h3>
         </div>
+        <p>These tattoos are very common in Samoa, Tonga, and Fiji, however,
+            they share the same culture with the other islands. It represents
+            status, strength, heritage, and identity.
+        </p>
     </div>
 </div>
 <div class="second-product">
-    <img src="{% static 'sample.jpg' %}" class="product-two" />
+    <img src="{% static 'jewel.jpg' %}" class="product-two" />
     <div class="product-info-2">
-        <h2>Product Name</h2>
+        <h2>Shell Necklaces & Jewelry</h2>
         <div class="price-and-cart-2">
-            <h3 class="price-2">Price</h3>
+            <h3 class="price-2">Price: $500</h3>
             <h3 class="cart-2">Add to Cart</h3>
+        </div>
+        <p>Worn during celebrations, ceremonies, and welcoming rituals. Popular in
+            Hawaii, Rarotonga, Tonga, and Fiji.
+        </p>
+    </div>
+</div>
+<div class="more-product">
+    <h2>Featured Products</h2>
+    <div class="more-product-container">
+        <div class="product-three-container">
+            <img src="{% static 'tapa.jpg' %}" class="product-three" />
+            <div class="product-details">
+                <h2>Tapa Cloth</h2>
+                <p>This cloth is common in Tonga, Fiji, Samoa, and Rarotonga. Tapa cloth
+                    is a handmade bark cloth used in ceremonies, gifts, and decorations.
+                </p>
+                <p><b>$1500</b></p>
+            </div>
+        </div>
+        <div class="product-column">
+            <img src="{% static 'woven.jpg' %}" class="product-four" /> 
+            <div class="product-details">
+                <h2>Handwoven Mats</h2>
+                <p>The mats are handwoven from pandanus leaves and are used for weddings,
+                    funerals, presents, and ceremonies. In Tonga and Samoa, finely woven
+                    mats are highly valued family heirlooms.
+                </p>
+                <p><b>$300</b></p>
+            </div>
+            <img src="{% static 'drums.jpg' %}" class="product-five" /> 
+            <div class="product-details">
+                <h2>Traditional Drums</h2>
+                <p>The drum is famous for its fast, rhythmic beats in traditional dancing.
+                    Meaning these drums are used for music, storytelling, and calling people
+                    for gathering.
+                </p>
+                <p><b>$600</b></p>
+            </div>
         </div>
     </div>
 </div>
 <div class="more-product">
     <h2>Section Heading</h2>
-    <div class="more-product-container">
-        <div class="product-three-container">
-            <img src="{% static 'sample.jpg' %}" class="product-three" />
-            <div class="product-details">
-                <h2>Product</h2>
-                <p>Description of the product</p>
-                <p>Price</p>
-            </div>
-        </div>
-        <div class="product-column">
-            <img src="{% static 'sample.jpg' %}" class="product-four" /> 
-            <div>
-                <h2>Product</h2>
-                <p>Descrption of the product</p>
-                <p>Price</p>
-            </div>
-            <img src="{% static 'sample.jpg' %}" class="product-five" /> 
-            <div>
-                <h2>Product</h2>
-                <p>Descrption of the product</p>
-                <p>Price</p>
-            </div>
-        </div>
+</div>
+<div class="extra-product">
+    <div class="product-item">
+        <span class="icon">🏝️</span> 
+        <h2>Subheading</h2>
+        <p>Body text for whatever youd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+    </div>
+    <div class="product-item">
+        <span class="icon">🏝️</span> 
+        <h2>Subheading</h2>
+        <p>Body text for whatever youd like to claim. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+    </div>
+    <div class="product-item">
+        <span class="icon">🏝️</span> 
+        <h2>Subheading</h2>
+        <p>Body text for whatever youd like to suggest. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+    </div>
+    <div class="product-item">
+        <span class="icon">🏝️</span> 
+        <h2>Subheading</h2>
+        <p>Body text for whatever youd like to type. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
     </div>
 </div>
 {% endblock %}

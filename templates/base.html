@@ -18,6 +18,7 @@
       <span>Hello, {{ user.username }}!</span>
         <a href="{% url 'user_profile' %}" class="base-button">Profile</a>
         <a href="{% url 'blog_details' %}" class="base-button">Blogs</a>
+        <a href="{% url 'store' %}" class="base-button">Store</a>
         <a href="{% url 'logout' %}" class="base-button">Logout</a>
       {% else %}
         <a href="{% url 'blog_details' %}" class="base-button">Blogs</a>

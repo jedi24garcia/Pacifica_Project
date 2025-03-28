@@ -12,7 +12,9 @@
         <h2>Traditional Tattoos</h2>
         <div class="price-and-cart">
             <h3 class="price">Price: $2500</h3>
-            <h3 class="cart">Add to Cart</h3>
+            <h3 class="cart">
+                <a href="{% url 'buy_products' pk=1 %}">Add to Cart</a>
+            </h3>
         </div>
         <p>These tattoos are very common in Samoa, Tonga, and Fiji, however,
             they share the same culture with the other islands. It represents
@@ -26,7 +28,9 @@
         <h2>Shell Necklaces & Jewelry</h2>
         <div class="price-and-cart-2">
             <h3 class="price-2">Price: $500</h3>
-            <h3 class="cart-2">Add to Cart</h3>
+            <h3 class="cart-2">
+                <a href="{% url 'buy_products' pk=2 %}">Add to Cart</a>
+            </h3>
         </div>
         <p>Worn during celebrations, ceremonies, and welcoming rituals. Popular in
             Hawaii, Rarotonga, Tonga, and Fiji.
@@ -43,7 +47,7 @@
                 <p>This cloth is common in Tonga, Fiji, Samoa, and Rarotonga. Tapa cloth
                     is a handmade bark cloth used in ceremonies, gifts, and decorations.
                 </p>
-                <p><b>$1500</b></p>
+                <p><b><a href="{% url 'buy_products' pk=3 %}">$1500</a></b></p>
             </div>
         </div>
         <div class="product-column">
@@ -54,7 +58,7 @@
                     funerals, presents, and ceremonies. In Tonga and Samoa, finely woven
                     mats are highly valued family heirlooms.
                 </p>
-                <p><b>$300</b></p>
+                <p><b><a href="{% url 'buy_products' pk=4 %}">$300</a></b></p>
             </div>
             <img src="{% static 'drums.jpg' %}" class="product-five" /> 
             <div class="product-details">
@@ -63,13 +67,13 @@
                     Meaning these drums are used for music, storytelling, and calling people
                     for gathering.
                 </p>
-                <p><b>$600</b></p>
+                <p><b><a href="{% url 'buy_products' pk=5 %}">$600</a></b></p>
             </div>
         </div>
     </div>
 </div>
 <div class="more-product">
-    <h2>What other travelers say!</h2>
+    <h2 style="font-family: 'Dancing Script', cursive; color: #7B3F00;">What other travelers say!</h2>
 </div>
 <div class="extra-product">
     <div class="product-item">

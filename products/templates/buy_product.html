@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Buy Products{% endblock %}
+
+{% block content %}
+{% load static %}
+<div class="home-container">
+    <h1>Purchase Here</h1>
+</div>
+{% if purchase.image %}
+    <img src="{{ purchase.image.url }}" alt="{{ purchase.name }} Image" />
+{% else %}
+    <p>No image available</p>
+{% endif %}
+<div>
+    <h2>{{ purchase.name }}</h2>
+</div>    
+{% endblock %}

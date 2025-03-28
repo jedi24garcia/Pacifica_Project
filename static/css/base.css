@@ -844,6 +844,7 @@ textarea {
 .purchase-image {
   height: auto;
   border-radius: 10px;
+  margin-left: 300px;
 }
 
 .purchase-details {

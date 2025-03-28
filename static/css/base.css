@@ -10,6 +10,23 @@
   padding: 10px;
 }
 
+body {
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/static/straw.jpg');
+  background-attachment: fixed;
+  opacity: 0.5; 
+  z-index: -1; 
+}
+
 .main-title {
   text-decoration: none;
   color: #7B3F00;
@@ -58,8 +75,6 @@
 }
 
 #interactive-map {
-  border: 5px solid #7B3F00;
-  border-radius: 15px;
   padding: 5px;
 }
 
@@ -136,7 +151,6 @@
 
 footer {
   display: flex;
-  background-color: #7B3F00;
   padding: 40px;
   margin-top: 20%;
   justify-content: space-between;
@@ -194,7 +208,6 @@ footer {
   border-radius: 20px;
   height: auto;
   width: 50%;
-  border: 5px solid #7B3F00;
   border-radius: 15px;
   padding: 5px;
 }
@@ -210,8 +223,6 @@ footer {
   width: 500px; 
   height: auto;
   text-align: center;
-  border: 5px solid #7B3F00;
-  border-radius: 15px;
   padding: 5px;
 }
 
@@ -239,8 +250,6 @@ footer {
 
 .images-contents {
   height: auto;
-  border: 5px solid #7B3F00;
-  border-radius: 15px;
   padding: 5px;
 }
 

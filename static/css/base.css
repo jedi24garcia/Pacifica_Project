@@ -811,8 +811,15 @@ textarea {
   align-items: center;
   text-align: center;
   gap: 10px; 
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .icon {
   font-size: 30px; 
+}
+
+.product-story {
+  font-size: 20px;
+  line-height: 1.6;
 }
